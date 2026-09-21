@@ -53,3 +53,16 @@ Dime   = 10 cents
 Total = 15 cents
 Expected: Newspaper released
 ..........
+###Test 2: dime->dime
+Dime = 10 cents
+Dime = 10 cents
+
+Total = 20 cents
+Expected: Newspaper released, no change returned
+###test 3: invalid nickel+ dime together
+Nickel = 5 cents
+Dime   = 10 cents
+
+Both coins inserted simultaneously
+Expected: Input ignored, newspaper not released
+
